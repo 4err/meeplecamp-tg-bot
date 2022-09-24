@@ -1,0 +1,16 @@
+{
+  "name": "meeple-camp-reminder-bot",
+  "version": "1.1.0",
+  "description": "Бот помощник мипл-кэмпа",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Денис @LuckyPants",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "moment": "^2.29.4",
+    "node-telegram-bot-api": "^0.59.0"
+  }
+}
