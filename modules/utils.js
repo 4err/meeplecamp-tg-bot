@@ -76,7 +76,7 @@ const getTopList = (topName = `optimists`) => {
 }
 
 const getCommandsList = () => {
-  return COMMANDS_LIST.map(it => '/' + `${it.command} - ${it.command}`).join('\n');
+  return COMMANDS_LIST.map(it => '/' + `${it.command} - ${it.description}`).join('\n');
 }
 
 module.exports = {
