@@ -26,7 +26,7 @@ function toJson() {
       hostTg,
       gameName: gameName.trim(),
       gameDesc,
-      gameLink,
+      gameLink: gameLink.trim(),
       gamePlayersCnt,
       gamePlayers: gamePlayers.filter(it => it !== "").map(it => it.trim())
     }

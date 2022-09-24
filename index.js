@@ -1,28 +1,28 @@
 const {
 
-	getFullGamesList
+  getFullGamesList
 } = require('./modules/utils')
 
 const {
-	initializeBot
+  initializeBot
 } = require('./modules/bot')
 
 global.GAMES = [];
 global.PLAYERS = [];
 getFullGamesList().then(({
-	games,
-	players
+  games,
+  players
 }) => {
-	global.GAMES = games;
-	global.PLAYERS = players;
-	initializeBot();
-	console.log('Бот готов.')
-	setInterval(async () => {
-		const {
-			games,
-			players
-		} = await getFullGamesList();
-		global.GAMES = games;
-		global.PLAYERS = players;
-	}, 1000 * 60)
+  global.GAMES = games;
+  global.PLAYERS = players;
+  initializeBot();
+  console.log('Бот готов.')
+  setInterval(async () => {
+    const {
+      games,
+      players
+    } = await getFullGamesList();
+    global.GAMES = games;
+    global.PLAYERS = players;
+  }, 1000 * 60)
 })
